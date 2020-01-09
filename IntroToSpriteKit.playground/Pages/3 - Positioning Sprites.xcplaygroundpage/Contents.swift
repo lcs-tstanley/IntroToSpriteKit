@@ -21,7 +21,7 @@ view.presentScene(scene)
 
 // Show the view in the live view area
 PlaygroundSupport.PlaygroundPage.current.liveView = view
-
+21
 /*:
  ### What is a sprite?
  
@@ -117,17 +117,17 @@ scene.addChild(star)
 
 // Exercise 1: Write your code below.
 let star2 = SKSpriteNode(imageNamed: "star")
-star2.position = CGPoint(x: 200, y: 160)
-scene.addChild(circle2)
+star2.position = CGPoint(x: scene.size.width / 2, y: scene.size.height / 2)
+scene.addChild(star2)
 
 // Exercise 2: Write your code below.
 let circle5 = SKSpriteNode(imageNamed: "circle")
-circle5.position = CGPoint(x: 400, y: 320)
+circle5.position = CGPoint(x: scene.size.width, y: scene.size.height)
 scene.addChild(circle5)
 
 // Exercise 3: Write your code below.
 let square = SKSpriteNode(imageNamed: "square")
-square.position = CGPoint(x: 200, y: 320)
+square.position = CGPoint(x: scene.size.width / 2, y: scene.size.height)
 scene.addChild(square)
 /*:
 
